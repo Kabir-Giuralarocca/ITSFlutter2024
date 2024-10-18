@@ -1,4 +1,4 @@
-import 'package:corso_flutter_2024/ui/screens/row_column_screen.dart';
+import 'package:corso_flutter_2024/ui/screens/image_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
           centerTitle: true,
         ),
       ),
-      home: const RowColumnScreen(),
+      home: const ImageScreen(),
     );
   }
 }
