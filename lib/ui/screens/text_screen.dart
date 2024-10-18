@@ -49,6 +49,15 @@ class TextScreen extends StatelessWidget {
               color: Colors.red,
             ),
           ),
+          const Text(
+            'This is Pacifico',
+            style: TextStyle(
+              fontFamily: 'Pacifico',
+              fontSize: 28,
+              fontWeight: FontWeight.w700,
+              color: Colors.amber,
+            ),
+          ),
         ]),
       ),
     );
