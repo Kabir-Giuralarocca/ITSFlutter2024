@@ -1,4 +1,4 @@
-import 'package:corso_flutter_2024/ui/screens/list_view_screen.dart';
+import 'package:corso_flutter_2024/ui/screens/custom_scroll_view_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
           centerTitle: true,
         ),
       ),
-      home: const ListViewScreen(),
+      home: const CustomScrollViewScreen(),
     );
   }
 }
