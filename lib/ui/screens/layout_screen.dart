@@ -11,8 +11,18 @@ class LayoutScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text('Layout')),
-      body: Column(children: [
-        ImageSection(),
+      body: ListView(children: [
+        SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          child: Row(children: [
+            ImageSection(
+                url:
+                    'https://images.pexels.com/photos/440731/pexels-photo-440731.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'),
+            ImageSection(
+                url:
+                    'https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'),
+          ]),
+        ),
         TitleSection(),
         ButtonsSection(),
         TextSection(),
