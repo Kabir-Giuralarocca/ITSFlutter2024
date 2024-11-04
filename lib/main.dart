@@ -1,7 +1,9 @@
-import 'package:corso_flutter_2024/ui/screens/custom_scroll_view_screen.dart';
+import 'package:corso_flutter_2024/router/app_router.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_web_plugins/flutter_web_plugins.dart';
 
 void main() {
+  usePathUrlStrategy();
   runApp(const MyApp());
 }
 
@@ -10,7 +12,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       title: 'Flutter Demo',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
@@ -21,7 +23,7 @@ class MyApp extends StatelessWidget {
           centerTitle: true,
         ),
       ),
-      home: const CustomScrollViewScreen(),
+      routerConfig: AppRouter.router,
     );
   }
 }
