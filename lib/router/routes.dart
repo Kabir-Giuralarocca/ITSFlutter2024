@@ -8,6 +8,7 @@ enum R {
   layout('Layout', '/layout'),
   listView('ListView', '/list-view'),
   customScrollView('CustomScrollView', '/custom-scroll-view'),
+  form('Form', '/form'),
   home('home', '/');
 
   final String name;

@@ -2,6 +2,7 @@ import 'package:corso_flutter_2024/router/routes.dart';
 import 'package:corso_flutter_2024/ui/screens/buttons_screen.dart';
 import 'package:corso_flutter_2024/ui/screens/container_screen.dart';
 import 'package:corso_flutter_2024/ui/screens/custom_scroll_view_screen.dart';
+import 'package:corso_flutter_2024/ui/screens/form_screen.dart';
 import 'package:corso_flutter_2024/ui/screens/home.dart';
 import 'package:corso_flutter_2024/ui/screens/icon_screen.dart';
 import 'package:corso_flutter_2024/ui/screens/image_screen.dart';
@@ -69,6 +70,11 @@ class AppRouter {
         name: R.customScrollView.name,
         path: R.customScrollView.path,
         builder: (context, state) => CustomScrollViewScreen(),
+      ),
+      GoRoute(
+        name: R.form.name,
+        path: R.form.path,
+        builder: (context, state) => FormScreen(),
       ),
     ],
   );
