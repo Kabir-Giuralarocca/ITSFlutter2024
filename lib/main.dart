@@ -24,6 +24,12 @@ class MyApp extends StatelessWidget {
           foregroundColor: Colors.white,
           centerTitle: true,
         ),
+        filledButtonTheme: FilledButtonThemeData(
+          style: ButtonStyle(
+            backgroundColor: WidgetStatePropertyAll(Colors.red),
+            foregroundColor: WidgetStatePropertyAll(Colors.white),
+          ),
+        ),
       ),
       routerConfig: AppRouter.router,
     );

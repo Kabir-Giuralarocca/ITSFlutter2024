@@ -10,6 +10,7 @@ import 'package:corso_flutter_2024/ui/screens/layout_screen.dart';
 import 'package:corso_flutter_2024/ui/screens/list_view_screen.dart';
 import 'package:corso_flutter_2024/ui/screens/row_column_screen.dart';
 import 'package:corso_flutter_2024/ui/screens/text_screen.dart';
+import 'package:corso_flutter_2024/ui/screens/theme_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -75,6 +76,11 @@ class AppRouter {
         name: R.form.name,
         path: R.form.path,
         builder: (context, state) => FormScreen(),
+      ),
+      GoRoute(
+        name: R.theme.name,
+        path: R.theme.path,
+        builder: (context, state) => ThemeScreen(),
       ),
     ],
   );

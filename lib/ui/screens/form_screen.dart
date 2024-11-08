@@ -1,3 +1,4 @@
+import 'package:corso_flutter_2024/ui/widgets/form/form_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
@@ -111,6 +112,7 @@ class _FormScreenState extends State<FormScreen> {
               ),
             ),
           ),
+          FormWidget()
         ]),
       ),
     );

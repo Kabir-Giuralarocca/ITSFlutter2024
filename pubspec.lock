@@ -100,10 +100,10 @@ packages:
     dependency: "direct main"
     description:
       name: go_router
-      sha256: "6f1b756f6e863259a99135ff3c95026c3cdca17d10ebef2bba2261a25ddc8bbc"
+      sha256: ce89c5a993ca5eea74535f798478502c30a625ecb10a1de4d7fef5cd1bcac2a4
       url: "https://pub.dev"
     source: hosted
-    version: "14.3.0"
+    version: "14.4.1"
   google_fonts:
     dependency: "direct main"
     description:
@@ -196,10 +196,10 @@ packages:
     dependency: "direct main"
     description:
       name: material_symbols_icons
-      sha256: "7626ce90395bc6dc2ecb7bdd84c04a97f3f084a4e923ff73791c3c409af02804"
+      sha256: "7b723abea4ad37e16fe921f1f1971cbb9b0f66d223a8c99981168a2306416b98"
       url: "https://pub.dev"
     source: hosted
-    version: "4.2789.0"
+    version: "4.2791.1"
   meta:
     dependency: transitive
     description:
@@ -220,10 +220,10 @@ packages:
     dependency: transitive
     description:
       name: path_provider
-      sha256: fec0d61223fba3154d87759e3cc27fe2c8dc498f6386c6d6fc80d1afdd1bf378
+      sha256: "50c5dd5b6e1aaf6fb3a78b33f6aa3afca52bf903a8a5298f53101fdaee55bbcd"
       url: "https://pub.dev"
     source: hosted
-    version: "2.1.4"
+    version: "2.1.5"
   path_provider_android:
     dependency: transitive
     description:
