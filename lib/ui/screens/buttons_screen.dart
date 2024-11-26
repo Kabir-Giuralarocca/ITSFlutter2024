@@ -8,7 +8,7 @@ class ButtonsScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text('Buttons')),
       body: Padding(
-        padding: const EdgeInsets.all(24),
+        padding: EdgeInsets.all(24),
         child: Column(
           children: [
             Row(
@@ -17,11 +17,11 @@ class ButtonsScreen extends StatelessWidget {
                 Column(children: [
                   FilledButton(
                     onPressed: () {},
-                    child: const Text('Filled'),
+                    child: Text('Filled'),
                   ),
                   ElevatedButton(
                     onPressed: () {},
-                    child: const Text('Elevated'),
+                    child: Text('Elevated'),
                   ),
                   OutlinedButton(
                     onPressed: () {},

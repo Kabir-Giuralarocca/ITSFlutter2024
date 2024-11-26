@@ -1,5 +1,8 @@
 import 'package:corso_flutter_2024/router/app_router.dart';
+import 'package:corso_flutter_2024/ui/bloc/theme.cubit.dart';
+import 'package:corso_flutter_2024/ui/theme/app_theme.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_web_plugins/url_strategy.dart';
 import 'package:go_router/go_router.dart';
 
@@ -14,24 +17,17 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp.router(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-        appBarTheme: const AppBarTheme(
-          backgroundColor: Colors.black,
-          foregroundColor: Colors.white,
-          centerTitle: true,
-        ),
-        filledButtonTheme: FilledButtonThemeData(
-          style: ButtonStyle(
-            backgroundColor: WidgetStatePropertyAll(Colors.red),
-            foregroundColor: WidgetStatePropertyAll(Colors.white),
-          ),
-        ),
-      ),
-      routerConfig: AppRouter.router,
+    return BlocProvider(
+      create: (context) => ThemeCubit(),
+      child: BlocBuilder<ThemeCubit, ThemeMode>(builder: (context, themeMode) {
+        return MaterialApp.router(
+          title: 'Flutter Demo',
+          theme: AppTheme.themeLight,
+          darkTheme: AppTheme.themeDark,
+          themeMode: themeMode,
+          routerConfig: AppRouter.router,
+        );
+      }),
     );
   }
 }
