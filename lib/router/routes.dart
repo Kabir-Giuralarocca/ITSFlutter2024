@@ -10,6 +10,7 @@ enum R {
   customScrollView('CustomScrollView', '/custom-scroll-view'),
   form('Form', '/form'),
   theme('Theme', '/theme'),
+  future('Future', '/future'),
   home('home', '/');
 
   final String name;

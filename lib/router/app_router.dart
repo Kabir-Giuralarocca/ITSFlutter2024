@@ -3,6 +3,7 @@ import 'package:corso_flutter_2024/ui/screens/buttons_screen.dart';
 import 'package:corso_flutter_2024/ui/screens/container_screen.dart';
 import 'package:corso_flutter_2024/ui/screens/custom_scroll_view_screen.dart';
 import 'package:corso_flutter_2024/ui/screens/form_screen.dart';
+import 'package:corso_flutter_2024/ui/screens/future_screen.dart';
 import 'package:corso_flutter_2024/ui/screens/home.dart';
 import 'package:corso_flutter_2024/ui/screens/icon_screen.dart';
 import 'package:corso_flutter_2024/ui/screens/image_screen.dart';
@@ -81,6 +82,11 @@ class AppRouter {
         name: R.theme.name,
         path: R.theme.path,
         builder: (context, state) => ThemeScreen(),
+      ),
+      GoRoute(
+        name: R.future.name,
+        path: R.future.path,
+        builder: (context, state) => FutureScreen(),
       ),
     ],
   );

@@ -34,7 +34,7 @@ class ThemeScreen extends StatelessWidget {
                     value: ThemeMode.light,
                     groupValue: context.watch<ThemeCubit>().state,
                     onChanged: (value) {
-                      context.read<ThemeCubit>().setThemeMode(value ?? ThemeMode.light);
+                      context.read<ThemeCubit>().setTheme(value ?? ThemeMode.light);
                     },
                   ),
                   Icon(Icons.light_mode_rounded),
@@ -45,7 +45,7 @@ class ThemeScreen extends StatelessWidget {
                     value: ThemeMode.dark,
                     groupValue: context.watch<ThemeCubit>().state,
                     onChanged: (value) {
-                      context.read<ThemeCubit>().setThemeMode(value ?? ThemeMode.dark);
+                      context.read<ThemeCubit>().setTheme(value ?? ThemeMode.dark);
                     },
                   ),
                   Icon(Icons.dark_mode_rounded),
@@ -56,7 +56,7 @@ class ThemeScreen extends StatelessWidget {
                     value: ThemeMode.system,
                     groupValue: context.watch<ThemeCubit>().state,
                     onChanged: (value) {
-                      context.read<ThemeCubit>().setThemeMode(value ?? ThemeMode.system);
+                      context.read<ThemeCubit>().setTheme(value ?? ThemeMode.system);
                     },
                   ),
                   Icon(Icons.settings),
